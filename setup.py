@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-
 with open('README.rst') as readme_file:
     README = readme_file.read()
 
@@ -10,7 +9,7 @@ with open('HISTORY.rst') as history_file:
 setup(name = 'muchspace',
       description = 'A CLI utility in python3 to calulate total disk space required for media links',
       long_description=README + '\n\n' + HISTORY,
-      version = '0.1.6',
+      version = '0.1.7',
       url = 'https://github.com/Hitoshirenu/muchspace',
       download_url = 'https://github.com/Hitoshirenu/muchspace/archive/0.1.tar.gz',
       author = 'abhiigatty',
@@ -39,7 +38,7 @@ setup(name = 'muchspace',
       install_requires = ['fire', 'requests'],
       entry_points = {
           'console_scripts': [
-              'muchspace = main_muchspace.muchspace:main'
+              'muchspace = muchspace.muchspace:main'
           ]
       }
 )

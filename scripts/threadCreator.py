@@ -1,3 +1,4 @@
+import threading
 import requests
 from scripts.byteSize import human_byte_size
 
@@ -18,3 +19,20 @@ def grab_info(URL, globalvars):
             # List_Of_Invalid_URLs.append(URL)
             print('invalid')
 
+""" Creating a threading list using list and starting all threads """
+def thread_series_creator(List_Of_URLs, globalvars, function_name=None):
+    start = 0
+    weight = end = (globalvars['Total_URLs']%500)
+    if function_name is None:
+        print("ERROR: No function threads to create! Try a function_name to thread_creator_series Method!")
+        return 
+    while True:
+        if start > globalvars['Total_URLs']:
+            break
+        threads = [threading.Thread(target=function_name, args=(URL, globalvars))for URL in List_Of_URLs[start:end]]
+        for thread in threads:
+            thread.start()
+        for thread in threads:
+            thread.join()
+        start = end
+        end = end + weight

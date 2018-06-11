@@ -2,9 +2,8 @@
 
 import fire
 from pathlib import Path
-from scripts.byteSize import human_byte_size
-from scripts.threadCreator import thread_series_creator
-
+import scripts.byteSize as sizesClass
+import scripts.threadCreator as threadClass
 class MuchSpace:
     """ Fire Class for muchspace Operations """
     def __init__(self):
@@ -44,7 +43,7 @@ class MuchSpace:
 
 
         # Running the list of URLs
-        thread_series_creator(List_Of_URLs, globalvars)
+        threadClass.thread_series_creator(List_Of_URLs=List_Of_URLs, globalvars=globalvars, function_name="grab_info")
 
         # Retrying if invalid links are found
         # while len(List_Of_Invalid_URLs) > 0:
@@ -60,7 +59,7 @@ class MuchSpace:
         print("******Final Diagnostic Report******")
         print("Total URLs: {0} Processed URLs: {1} Rate of completion: {2:.2f}%".format(globalvars['Total_URLs'], globalvars['Processed_URLs'], globalvars['Progress']))
         #print("Total no. of Invalid URLs: {}".format(len(List_Of_Invalid_URLs)))
-        print("Total size of {}/{} links is: {}".format(globalvars['Processed_URLs'], globalvars['Total_URLs'], human_byte_size(globalvars['Total_Size']))) 
+        print("Total size of {}/{} links is: {}".format(globalvars['Processed_URLs'], globalvars['Total_URLs'], sizesClass.human_byte_size(globalvars['Total_Size']))) 
         
 
 def main():
