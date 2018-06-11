@@ -1,4 +1,4 @@
-README.md
+README.rst
 setup.cfg
 setup.py
 main_muchspace/__init__.py
