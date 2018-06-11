@@ -20,16 +20,13 @@ def grab_info(URL, globalvars):
             print('invalid')
 
 """ Creating a threading list using list and starting all threads """
-def thread_series_creator(List_Of_URLs, globalvars, function_name=None):
+def thread_series_creator(List_Of_URLs, globalvars):
     start = 0
-    weight = end = (globalvars['Total_URLs']%500)
-    if function_name is None:
-        print("ERROR: No function threads to create! Try a function_name to thread_creator_series Method!")
-        return 
+    weight = end = (globalvars['Total_URLs']%500) 
     while True:
         if start > globalvars['Total_URLs']:
             break
-        threads = [threading.Thread(target=function_name, args=(URL, globalvars))for URL in List_Of_URLs[start:end]]
+        threads = [threading.Thread(target=grab_info, args=(URL, globalvars))for URL in List_Of_URLs[start:end]]
         for thread in threads:
             thread.start()
         for thread in threads:

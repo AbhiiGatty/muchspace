@@ -2,8 +2,8 @@
 
 import fire
 from pathlib import Path
-import scripts.byteSize as sizesClass
-import scripts.threadCreator as threadClass
+from scripts import byteSize as sizesClass
+from scripts import threadCreator as threadClass
 class MuchSpace:
     """ Fire Class for muchspace Operations """
     def __init__(self):
@@ -43,7 +43,7 @@ class MuchSpace:
 
 
         # Running the list of URLs
-        threadClass.thread_series_creator(List_Of_URLs=List_Of_URLs, globalvars=globalvars, function_name="grab_info")
+        threadClass.thread_series_creator(List_Of_URLs=List_Of_URLs, globalvars=globalvars)
 
         # Retrying if invalid links are found
         # while len(List_Of_Invalid_URLs) > 0:
