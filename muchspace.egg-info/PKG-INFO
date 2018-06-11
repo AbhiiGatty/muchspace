@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: muchspace
-Version: 0.1.7
+Version: 0.1.8
 Summary: A CLI utility in python3 to calulate total disk space required for media links
 Home-page: https://github.com/Hitoshirenu/muchspace
 Author: abhiigatty
