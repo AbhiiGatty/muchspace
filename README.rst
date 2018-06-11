@@ -57,8 +57,8 @@ Instructions
 
 and make sure you are working on the same branch and not the ``master``, run ``git status`` to know which branch you are working on, run ``git branch``, your branch will be highlighted with an ``*``. If you are not in your branch or want to move
 to another branch use ``git checkout BRANCH_NAME``. a good branch name
-should explain what this branch is about eg. ``stackby_type``,
-``stackby_date``, ``feature_undo`` etc. - Add the upstream url of
+should explain what this branch is about eg.
+``scanner``, ``feature_update`` etc. - Add the upstream url of
 original repository, follow the instructions `Here`_ - Make sure your
 repository is in sync with the original repository’s master branch.
 Follow the instruction
