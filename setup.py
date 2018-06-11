@@ -1,33 +1,46 @@
 from setuptools import setup, find_packages
 
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open('resources/README.rst') as readme_file:
+    README = readme_file.read()
 
-setup(name='muchspace',
-      description='A CLI utility in python3 to calulate total disk space required for media links',
-      long_description=long_description,
-      version='0.1.0',
-      url='https://github.com/Hitoshirenu/muchspace',
-      author='abhiigatty',
-      author_email='abhiigatty@gmail.com',
-      license='MIT',
-      classifiers=[
-        "Development Status :: 1 - Alpha",
-        "Environment :: Console",   
-        "Intended Audience :: End Users/Desktop",
-        "Programming Language :: Python :: 3.6",
-        "Topic :: System :: Filesystems",
-        "License :: OSI Approved :: MIT License"
+with open('resources/HISTORY.rst') as history_file:
+    HISTORY = history_file.read()
+
+setup(name = 'muchspace',
+      description = 'A CLI utility in python3 to calulate total disk space required for media links',
+      long_description=README + '\n\n' + HISTORY,
+      version = '0.2.0',
+      url = 'https://github.com/Hitoshirenu/muchspace',
+      download_url = 'https://github.com/Hitoshirenu/muchspace/archive/0.1.tar.gz',
+      author = 'abhiigatty',
+      author_email = 'abhiigatty@gmail.com',
+      license = 'MIT',
+      classifiers = [
+        'Development Status :: 1 - Planning',
+        'Environment :: Console',   
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Environment :: Win32 (MS Windows)',
+        'Environment :: X11 Applications :: GTK',
+        'Operating System :: MacOS',
+        'Operating System :: Microsoft :: Windows',
+        'Operating System :: POSIX',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Topic :: System :: Filesystems',
+        'Topic :: Software Development',
+        'Topic :: Utilities',
       ],
-      keywords=['band width', 'disk-space', 'analyzer', 'cli', 'python3'],
-      maintainer='abhiigatty',
-      maintainer_email='abhiigatty@gmail.com',
+      keywords = ['band width', 'disk-space', 'analyzer', 'cli', 'python3'],
+      maintainer = 'abhiigatty',
+      maintainer_email = 'abhiigatty@gmail.com',
       packages=find_packages(),
-      install_requires=['fire>=0.1.3', 'requests>=2.18.4'],
-      entry_points={
+      install_requires = ['fire', 'requests'],
+      entry_points = {
           'console_scripts': [
-              'muchspace = muchspace.main:run'
+              'muchspace = main_muchspace.muchspace:main'
           ]
       }
 )

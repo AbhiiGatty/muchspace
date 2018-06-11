@@ -1,0 +1,3 @@
+[console_scripts]
+muchspace = main_muchspace.muchspace:main
+

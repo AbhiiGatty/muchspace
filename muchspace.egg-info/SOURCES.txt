@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+main_muchspace/__init__.py
+main_muchspace/muchspace.py
+main_muchspace/scripts/__init__.py
+main_muchspace/scripts/byteSize.py
+main_muchspace/scripts/grabInfo.py
+main_muchspace/scripts/threadCreator.py
+muchspace.egg-info/PKG-INFO
+muchspace.egg-info/SOURCES.txt
+muchspace.egg-info/dependency_links.txt
+muchspace.egg-info/entry_points.txt
+muchspace.egg-info/requires.txt
+muchspace.egg-info/top_level.txt

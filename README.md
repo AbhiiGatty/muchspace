@@ -10,10 +10,14 @@ makespace uses a number of open source python modules:
 
 * [Requests] - HTML enhanced for web apps!
 
+# Install
+```
+$ pip install muchspace
+```
+
 # Usage
 ```
-Uploading soon...
-
+$ muchspace getfilefrom <FILE PATH>
 ```
 
 ## Development
@@ -43,5 +47,3 @@ MIT
 
    [Requests]: <http://docs.python-requests.org/en/master/>
    [Google's Fire module]: <https://github.com/google/python-fire>
-  
-  

@@ -11,8 +11,7 @@ class MuchSpace:
         print("muchspace v0.1 Alpha")
 
     """ Function to stack the given directory based on extensions"""
-    def getfrom(self, file_name):
-        
+    def getfilefrom(self, file_name):
         # Initialization
         globalvars = dict()
         #globalvars['Max_Retries'] = int(retry_no)
