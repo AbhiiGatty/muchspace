@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
 setup(name = 'muchspace',
       description = 'A CLI utility in python3 to calulate total disk space required for media links',
       long_description=README + '\n\n' + HISTORY,
-      version = '0.1.3',
+      version = '0.1.4',
       url = 'https://github.com/Hitoshirenu/muchspace',
       download_url = 'https://github.com/Hitoshirenu/muchspace/archive/0.1.tar.gz',
       author = 'abhiigatty',
