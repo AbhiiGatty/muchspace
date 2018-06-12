@@ -16,4 +16,4 @@ muchspace.egg-info/requires.txt
 muchspace.egg-info/top_level.txt
 scripts/__init__.py
 scripts/byteSize.py
-scripts/threadCreator.py
+scripts/fastRequests.py

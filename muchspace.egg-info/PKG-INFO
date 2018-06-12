@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: muchspace
-Version: 0.1.8
+Version: 0.2.0
 Summary: A CLI utility in python3 to calulate total disk space required for media links
 Home-page: https://github.com/Hitoshirenu/muchspace
 Author: abhiigatty
@@ -45,14 +45,13 @@ Description: makespace
         
         Want to contribute? Great! To contribute to the project, Please take up
         the tasks specified in the issues. Add a comment in the issues if you
-        are taking up one. check out CONTRIBUTING.rst for more details.
+        are taking up one. check out `contributing`_ for more details.
         
         
         Todos
         =====
         
-        -  .. rubric:: Better working with async mode
-              :name: better-working-with-async-mode
+        - Better working with async mode
         
         License
         =======
@@ -63,6 +62,7 @@ Description: makespace
         .. _Google’s Fire module: https://github.com/google/python-fire
         .. _Requests: http://docs.python-requests.org/en/master/
         .. _here: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+        .. _contributing: https://github.com/Hitoshirenu/muchspace/blob/master/CONTRIBUTING.rst
         
         
         
@@ -74,19 +74,22 @@ Description: makespace
         ------------------
         
         * First release on PyPI.
-Keywords: band width,disk-space,analyzer,cli,python3
+Keywords: disk-space,analyzer,cli,python3,logging,link checking,link health
 Platform: UNKNOWN
-Classifier: Development Status :: 1 - Planning
+Classifier: Development Status :: 2 - Pre-Alpha
 Classifier: Environment :: Console
 Classifier: Intended Audience :: End Users/Desktop
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Environment :: Win32 (MS Windows)
 Classifier: Operating System :: MacOS
 Classifier: Operating System :: Microsoft :: Windows
-Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
 Classifier: Programming Language :: Python
-Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Logging
 Classifier: Topic :: System :: Filesystems
-Classifier: Topic :: Software Development
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
 Classifier: Topic :: Utilities
