@@ -1,16 +1,16 @@
-makespace
+muchspace
 =========
 
-makespace is python tool to calculate the space required to download
+muchspace is python tool to calculate the space required to download
 media links in a file.
 
-**makespace** uses `Google’s Fire module`_ to make the command line
+**muchspace** uses `Google’s Fire module`_ to make the command line
 interface. Refer their docs for more info.
 
 Modules
 =======
 
-makespace uses a number of open source python modules:
+muchspace uses a number of open source python modules:
 
 -  `fire`_ - Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
 -  `requests`_ - Requests is the only Non-GMO HTTP library for Python, safe for human consumption.
