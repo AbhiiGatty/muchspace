@@ -43,13 +43,13 @@ Usage
      Email: abhiigatty@gmail.com
      muchspace: The link status checking CLI.
      Example usage:
-     muchspace grabinfo <FILE_PATH> or
-     muchspace grabinfo <FILE_PATH> --report # The --report will generate a json report 
+     muchspace getinfo <FILE_PATH> or
+     muchspace getinfo <FILE_PATH> --report # The --report will generate a json report 
      i.e
-     muchspace grabinfo --file-path <FILE_PATH> [--report]
+     muchspace getinfo --file-path <FILE_PATH> [--report]
 
      Usage:       muchspace 
-                  muchspace grabinfo
+                  muchspace getinfo
 
  
 
