@@ -6,8 +6,8 @@ from scripts import fastRequests
 class MuchSpace:
     """ Fire Class for muchspace Operations 
         Author: abhiigatty 
-        Email: abhiigatty@gmail.com
-        muchspace: The link status checking CLI.
+        Email: abhiigatty@gmail.com\n
+            muchspace: The link status checking CLI.
             Example usage:
             muchspace grabinfo <FILE_PATH> or
             muchspace grabinfo <FILE_PATH> --report # The --report will generate a json report 
@@ -15,7 +15,7 @@ class MuchSpace:
             muchspace grabinfo --file-path <FILE_PATH> [--report]"""
 
     def __init__(self):
-        print("muchspace v2 - Pre-Alpha\n\tmuchspace: The link status checking CLI.")
+        print("muchspace v2 - Pre-Alpha")
 
     """ Function to stack the given directory based on extensions"""
     def grabinfo(self, file_path, report = False):

@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: muchspace
-Version: 0.2.0
+Version: 0.3.1
 Summary: A CLI utility in python3 to calulate total disk space required for media links
 Home-page: https://github.com/Hitoshirenu/muchspace
 Author: abhiigatty
@@ -9,19 +9,19 @@ Maintainer: abhiigatty
 Maintainer-email: abhiigatty@gmail.com
 License: MIT
 Download-URL: https://github.com/Hitoshirenu/muchspace/archive/0.1.tar.gz
-Description: makespace
+Description: muchspace
         =========
         
-        makespace is python tool to calculate the space required to download
+        muchspace is python tool to calculate the space required to download
         media links in a file.
         
-        **makespace** uses `Google’s Fire module`_ to make the command line
+        **muchspace** uses `Google’s Fire module`_ to make the command line
         interface. Refer their docs for more info.
         
         Modules
         =======
         
-        makespace uses a number of open source python modules:
+        muchspace uses a number of open source python modules:
         
         -  `fire`_ - Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
         -  `requests`_ - Requests is the only Non-GMO HTTP library for Python, safe for human consumption.
@@ -103,9 +103,19 @@ Description: makespace
         ------------------
         
         * First release on PyPI.
+        
+        0.2.0 (10-06-2018)
+        ------------------
+        
+        * First Working release.
+        
+        0.3.1 (12-06-2018)
+        ------------------
+        
+        * First stable release with feature support.
 Keywords: disk-space,analyzer,cli,python3,logging,link checking,link health
 Platform: UNKNOWN
-Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Development Status :: 3 - Alpha
 Classifier: Environment :: Console
 Classifier: Intended Audience :: End Users/Desktop
 Classifier: Intended Audience :: Developers
