@@ -29,7 +29,7 @@ Usage
 
 ::
 
-   $ muchspace getfilefrom <FILE PATH> [--report] 
+   $ muchspace getinfo <FILE PATH> [--report] 
 
 ::
 
